@@ -1,0 +1,15 @@
+{
+    "manifest_version": 2,
+    "name": "Bypass Ankama's warning message", 
+    "description": "Avoid waiting 5 seconds to access your site", 
+    "version": "0.1",
+    "icons": { 
+        "128" : "128.png" 
+    },
+    "content_scripts": [
+        {
+            "matches": ["https://go.ankama.com/*"],
+            "js": ["script.js"]
+          }
+    ]
+}
